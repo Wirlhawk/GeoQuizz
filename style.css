@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3em;
+    background-color: #f9f9f9;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    color: #6A5AE0;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+    background: #E8E5FA;
+    padding: 2em;
+    border-radius: 1em;
+    width: 47%;
+    gap: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    margin:0.75em;
+}
+
+ul li a {
+    text-decoration: none;
+    background: #6A5AE0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: .75em;
+    color: #E8E5FA;
+    transition: all ease .1s;
+}
+
+ul li a:hover {
+    background: #211675;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.result-container img {
+    width: 200px;
+    margin-bottom: 2em;
+}
+
+.result-container .easter-egg {
+    width: 400px;
+}
+
+.result-container a {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .question-box {
+        width: 100%;
+    }
+
+    h1 .title , h1{
+        font-size: 1.5em;
+    }
+
+        .result-container img {
+            width: 150px;
+            margin-bottom: 2em;
+        }
+}
